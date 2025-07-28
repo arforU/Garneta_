@@ -1,0 +1,130 @@
+/* Fonts from Google: Pacifico & Quicksand */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  user-select: none;
+}
+
+body {
+  background: linear-gradient(135deg, #ffc1cc, #ffeff4);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  color: #663344;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #ff4d6d;
+  text-shadow: 1px 1px 5px #ff8aa6;
+}
+
+header p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #a63a56;
+  margin-top: 0.2rem;
+  letter-spacing: 0.05em;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.buttons button {
+  background: #ff7396;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 12px #ff90a9cc;
+  transition: background 0.3s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons button::before {
+  content: "🍓";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+}
+
+.buttons button:hover {
+  background: #ff5479;
+  transform: scale(1.1);
+  box-shadow: 0 8px 18px #ff5479cc;
+}
+
+.content {
+  max-width: 600px;
+  background: #fff0f5;
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #a63a56;
+  box-shadow: 0 6px 20px #ffb6c1aa;
+  text-align: center;
+  min-height: 140px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.content::before {
+  content: "🍰";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2.5rem;
+  opacity: 0.15;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem 0;
+  font-weight: 600;
+  color: #b35772;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+}
+
+/* Strawberry decoration at bottom corners */
+body::before,
+body::after {
+  content: "🍓";
+  font-size: 3.5rem;
+  position: fixed;
+  bottom: 10px;
+  opacity: 0.3;
+  user-select: none;
+}
+
+body::before {
+  left: 15px;
+  transform: rotate(-15deg);
+}
+
+body::after {
+  right: 15px;
+  transform: rotate(10deg);
+}
